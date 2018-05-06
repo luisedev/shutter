@@ -1,0 +1,28 @@
+.img-thumbnail{
+	filter:  sepia(80%);
+
+}
+
+.img-thumbnail:hover{
+	filter:none;
+	box-shadow: 1px 1px 40px orange;
+	transition: 2s;
+	-webkit-transition: 2s;
+	-moz-transition: 2s;
+}
+
+div h5{
+	background: rgba(0,0,0,0.5);
+
+}
+
+div p{
+	background: rgba(256,256,256,0.5);
+	color: black;
+	font-weight: bold;
+}
+
+.descripcion{
+	background: rgba(0,0,0,0.5);
+	color: black;
+}

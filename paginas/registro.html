@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+	
+	<!-- Estilos propios-->
+	<link rel="stylesheet" href="../css/index.css">
+
+   	<!--Favicon-->
+    <link rel="icon" href="../imagenes/favicon.png">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+    <title>Shutter:	Registro</title>
+  </head>
+
+  <body>
+    
+   
+	
+	<!-- Contenedor -->
+	<div class="container  mt-5 rounded ">
+		<!-- Navegador -->
+	    <nav class="navbar navbar-expand-lg navbar-dark pt-4">
+		  <a class="navbar-brand text-dark p-2 px-3 rounded bg-white brandest " href="../index.html"> <h3>Shutter</h3> </a>
+
+		  <button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+		    <div class="navbar-nav anim menu rounded-bottom">
+		      <a class="nav-item nav-link text-white mx-4 " href="artistica.html">		Artística		</a>
+		      <a class="nav-item nav-link text-white mx-4 " href="macro.html">			Macrofotografía	</a>
+		      <a class="nav-item nav-link text-white mx-4 " href="periodistica.html">	Periodística	</a>
+		      <a class="nav-item nav-link text-white mx-4 " href="retrato.html">					Conócenos		</a>
+		      <a class="nav-item nav-link text-white mx-4 d-lg-none  " data-toggle="modal" data-target="#login"">		Login			</a>
+		    </div>
+		  </div>
+
+		</nav>
+		<!-- Fin navegador -->	  
+		
+		<!-- Fin modal -->	  
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="Login">Login</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row justify-content-center">
+		      		<div class="col-4">
+		      			<img src="../imagenes/login.png" alt="loginimage" class="rounded img-fluid">
+		      		</div>
+		      	</div>
+			<!--Formulario-->
+		       <form method="post" action="login.php">
+				  <div class="row justify-content-center p-2">
+				    <div class="col-md-6">
+				      <input type="email" class="form-control" placeholder="ejemplo@dominio.com" required>
+				    </div>
+				  </div>
+				  <div class="row justify-content-center p-2">
+				    <div class="col-md-6">
+				      <input type="password" class="form-control" placeholder="Contraseña" required>
+				    </div>
+				  </div>
+				  <div class="row text-center">
+				      	<div class="col-md-12">
+				      		<a href="registro.html" class="text-center mt-2 regist"> ¿Todavía no te has registrado?</a>
+				      	</div>
+				  </div>
+				   <div class="modal-footer">
+			        <button type="reset" class="btn btn-danger text-light" data-dismiss="modal" >Cerrar</button>
+			        <button type="submit" class="btn bg-dark text-light">Entrar</button>
+			      </div>
+				</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- Fin modal -->	 
+
+		<div class="row justify-content-center mt-md-5">
+			<div class="col-md-10">
+				<form method="post"	action="formu.php">
+				  <div class="menu text-light p-2 mt-5">
+
+				  	<div class="form-row ">
+				  	  <div class="form-group col-md-6">
+				  	    <label for="inputEmail4">Email</label>
+				  	    <input type="email" class="form-control" id="mail" placeholder="usuario@domino.com" required>
+				  	  </div>
+				  	  <div class="form-group col-md-6">
+				  	    <label for="inputPassword4">Contraseña</label>
+				  	    <input type="password" class="form-control" id="contraseña" placeholder="Password" required>
+				  	  </div>
+				  	</div>
+
+				  	<div class="row">
+				  		<div class="form-group col-md-6">
+				  		  <label for="inputAddress">Dirección</label>
+				  		  <input type="text" class="form-control" id="inputAddress" placeholder="Calle, avenida" required>
+				  		</div>
+				  		<div class="form-group col-md-6">
+				  		  <label for="inputAddress2">Dirección 2</label>
+				  		  <input type="text" class="form-control" id="inputAddress2" placeholder="Portal, escalera y piso" required>
+				  		</div>
+				  	</div>
+
+				  	<div class="form-row">
+				  	  <div class="form-group col-md-4">
+				  	    <label for="ciudad">Ciudad</label>
+				  	    <input type="text" class="form-control" id="ciudad">
+				  	  </div>
+				  	  <div class="form-group col-md-4">
+				  	    <label for="pais">Pais</label>
+				  	    <select id="pais" class="form-control">
+				  	      <option selected>España</option>
+				  	      <option>Otro país...</option>
+				  	    </select>
+				  	  </div>
+				  	  <div class="form-group col-md-4">
+				  	    <label for="codpostal">Código postal</label>
+				  	    <input type="text" class="form-control" id="codpostal">
+				  	  </div>
+				  	</div>
+
+				  	<div class="form-group">
+				  	  <div class="form-check">
+				  	    <input class="form-check-input" type="checkbox" id="gridCheck">
+				  	    <label class="form-check-label" for="gridCheck">
+				  	      ¿Quieres recibir nuestras noticias en tu correo?
+				  	    </label>
+				  	  </div>
+				  	</div>
+
+				  	<div class="row">
+				  		<div class="col-md-12 text-right ">
+				  			<button type="submit" class="btn btn-success">Enviar</button>
+				  		</div>
+				  	</div>
+
+				  </div>
+				</form>
+			</div>
+		</div>
+		<!--Registro-->
+
+		<!--Fin registro -->
+	</div>
+
+	<!-- Fin contenedor-->
+
+    <!-- jQuery,Popper.js,Bootstrap JS -->
+    <script src="../jq/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,86 @@
+
+/* Estilo para el cuerpo de la extensión index.html */
+body{
+	background-color: white;
+	background-image: url(../imagenes/backblur.jpg);
+	background-size: cover;
+
+}
+
+/* Clase para el contenedor */
+.container{
+	background-image: url(../imagenes/roof_shadow_glass_skyscrapers_47938_1920x1080.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 800px;
+	max-width: 1200px;
+	box-shadow: 10px 10px 100px black;
+	position: relative;
+
+}
+
+/* Clase para el botón de login*/
+.loginbot{
+	position: absolute;
+	bottom:15px;
+	right: 30px;
+	font-family: times;
+
+}
+
+/* Transformacion para el botón de login*/
+.loginbot:hover{
+	transform: scale(1.2);
+}
+
+/* Clase para el menu principal */
+.menu{
+	background:rgba(0,0,0,0.6); 
+	box-shadow: 2px 2px 100px black;
+	border-top:3px solid white;	
+}
+
+/* Estilo de la marca principal del menú */
+.brandest{
+	font-family: Dancing Script;
+}
+
+/* Transformación para la marca principal del menú */
+.brandest:hover{
+	transform: scale(1.2);
+}
+
+/* Estilo para el texto del menu */
+div a{
+	font-family: times;
+	font-size:1.5em;
+	font-style: italic;
+
+}
+/*Transformación para las opciones del menú */
+.menu a:hover{
+
+	
+	transform: scale(1.1);
+}
+
+/* Clase para las cartas*/
+.carta{
+	color: black;
+	background:rgba(256,256,256,0.8);
+	box-shadow: 2px 2px 100px black ;
+	border:0px;
+	
+}
+
+/* Transformación para las cartas */
+.carta:hover{
+	transform: scale(1.04);
+	background-color: rgb(79, 85, 94);
+	color:white;
+}
+
+/* Transformación para las cartas */
+.regist{
+	font-size: 1.2em;
+}

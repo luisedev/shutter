@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+	
+	<!-- Estilos propios-->
+	<link rel="stylesheet" href="css/index.css">
+
+   	<!--Favicon-->
+    <link rel="icon" href="imagenes/favicon.png">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
+    <title>Shutter</title>
+  </head>
+
+  <body>
+	<!-- Contenedor -->
+	<div class="container mt-3 mb-3 rounded ">
+		<!-- Navegador -->
+	    <nav class="navbar navbar-expand-lg navbar-dark pt-4">
+		  <a class="navbar-brand text-dark p-2 px-3 rounded bg-white brandest " href="#"> <h3>Shutter</h3> </a>
+
+		  <button class="navbar-toggler menu" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+		    <div class="navbar-nav anim menu rounded-bottom">
+		      <a class="nav-item nav-link text-white mx-4 " href="paginas/artistica.html">		Artística		</a>
+		      <a class="nav-item nav-link text-white mx-4 " href="paginas/macro.html">			Macrofotografía	</a>
+		      <a class="nav-item nav-link text-white mx-4 " href="paginas/periodistica.html">	Periodística	</a>
+		      <a class="nav-item nav-link text-white mx-4 " href="paginas/retrato.html">		Conócenos		</a>
+		      <a class="nav-item nav-link text-white mx-4 d-lg-none  " href="#login" data-toggle="modal" data-target="#login">			Login			</a>
+		    </div>
+		  </div>
+
+		</nav>
+		<!-- Fin navegador -->	
+			
+		<!-- Cards -->
+		<div class="card-group  mt-5">
+		<!-- Carta 1 -->
+		  <div class="card rounded  carta mr-2 ">
+		    <a href="paginas/artistica.html"><img class="card-img-top" src="imagenes/artisticcard.jpg" alt="Card image cap" alt="Card image cap"></a>
+		    <div class="card-body">
+		      <h5 class="card-title">El Arte de la Nada</h5>
+		      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eveniet nulla eligendi quam atque, quia beatae. Vero, cumque architecto illo.</p>
+		      <p class="card-text"><small class="text-muted"><b>Fotógrafo/a: </b>Emilio Duró</small></p>
+		    </div>
+		  </div>
+		<!-- Carta 2 -->
+			 
+			  <div class="card rounded carta mr-2">
+			    <a href="paginas/periodistica.html"><img class="card-img-top" src="imagenes/portraitcard.jpg" alt="Card image cap"></a>
+			    <div class="card-body">
+			      <h5 class="card-title">Reflejos del Alma</h5>
+			      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eveniet nulla eligendi quam atque, quia beatae. Vero, cumque architecto illo.</p>
+			      <p class="card-text"><small class="text-muted"><b>Fotógrafo/a: </b>Richard Gibson</small></p>
+			    </div>
+			  </div>
+		<!-- Carta 3 -->
+		  <div class="card rounded carta mr-2">
+		    <a href="paginas/macro.html"><img class="card-img-top" src="imagenes/macrocard.jpg" alt="Card image cap"></a>
+		    <div class="card-body">
+		      <h5 class="card-title">Insecto predilecto</h5>
+		      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eveniet nulla eligendi quam atque, quia beatae. Vero, cumque architecto illo.</p>
+		      <p class="card-text"><small class="text-muted"><b>Fotógrafo/a: </b>Estela Reinolds	</small></p>
+		    </div>
+		  </div>
+
+		</div>	
+
+		<!--Botón de login-->
+		<div class="row">
+			<button type="button" class="btn d-none d-lg-block px-4 loginbot font-italic" data-toggle="modal" data-target="#login" > <h3>Login</h3> </button>
+		</div>  
+
+		<!-- Modal -->
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="Login">Login</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      	<div class="row justify-content-center">
+		      		<div class="col-4">
+		      			<img src="imagenes/login.png" alt="loginimage" class="rounded img-fluid">
+		      		</div>
+		      	</div>
+			<!--Formulario-->
+		       <form method="post" action="login.php">
+				  <div class="row justify-content-center p-2">
+				    <div class="col-md-6">
+				      <input type="email" class="form-control" placeholder="ejemplo@dominio.com" required>
+				    </div>
+				  </div>
+				  <div class="row justify-content-center p-2">
+				    <div class="col-md-6">
+				      <input type="password" class="form-control" placeholder="Contraseña" required>
+				    </div>
+				  </div>
+				  <div class="row text-center">
+				      	<div class="col-md-12">
+				      		<a href="paginas/registro.html" class="text-center mt-2 regist"> ¿Todavía no te has registrado?</a>
+				      	</div>
+				  </div>
+				   <div class="modal-footer">
+			        <button type="reset" class="btn btn-danger text-light" data-dismiss="modal" >Cerrar</button>
+			        <button type="submit" class="btn bg-dark text-light">Entrar</button>
+			      </div>
+				</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>	                                      
+
+	</div>
+
+	<!-- Fin contenedor-->
+
+    <!-- jQuery,Popper.js,Bootstrap JS -->
+    <script src="jq/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
